@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Maze Game Assignment</title>
+    <style>
+
+        .scoreTable{
+            max-height: 600px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 50px #000000;
+            padding:0;
+        }
+
+        .scoreTable::-webkit-scrollbar {
+            display: none;
+        }
+
+        .tableDiv{
+            margin-top: 100px;   
+        }
+        .scoreTable thead th { 
+            position: sticky; 
+            top: 0;
+        }
+        .scoreTable tr:hover{
+            background-color: rgb(133, 133, 133);
+        }
+
+        .scoreTable a{
+            text-decoration: none;
+            color: black;
+        }
+        .scoreTable a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        body{
+            background: url("https://wallpaperset.com/w/full/a/8/4/38610.jpg");
+        }
+
+        .card{
+            box-shadow: 5px 5px 50px #000000;
+            border-radius: 15px;
+        }
+        @media (max-width: 992px) {
+            table, .card .btn{
+                font-size: 0.7rem;
+            }}
+        @media (max-width: 768px) {
+            table, .card .btn{
+                font-size: 0.6rem;
+            }
+        }
+        
+        @media (max-width: 607px) { 
+            table, .card .btn{
+                font-size: 6px
+            }
+            .scoreTable{
+                max-height: 400px;
+                font-size: 0.5rem;
+            }
+        }
+        @media (min-width: 1653px){
+            .card .btn{
+                font-size: 1rem;
+            }
+            table{
+                font-size: 1.5rem;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top"  style="background-color: rgba(0, 0, 0, 0);">
+        <a class="navbar-brand" href="#">Our Maze Highscores</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        
+      </nav>
+
+                {% block content %}
+                {% endblock %}
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>

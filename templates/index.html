@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-sm-6 tableDiv">
+            <div class="row">
+                <div class="container-fluid">
+                    <table class="table col-12  scoreTable">
+                        <thead class="thead-dark">
+                            <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Score</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-light">
+                            {% for idx in range(row_num)%}
+                            <tr>
+                            <th scope="row">{{idx+1}}</th>
+                            <td>{{scores[idx]['name']}}</td>
+                            <td>{{scores[idx]['score']}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+        
+</div>
+
+    
+
+    
+{% endblock %}
